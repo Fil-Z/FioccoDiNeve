@@ -176,13 +176,30 @@
 
   |**ID**	|**Nome**			|**Priorità**|**Vers**|**Note**  |
   |----|------------|--------|----|------|
-  |Req-|Dovrà essere creato un sito web|1|1.0||
-  |Req-|Il sito web dovrà contenere la descrizione dell'applicazione|1|1.0||
-  |Req-|Il sito web dovrà permettere il download dell'applicazione|1|1.0||
+  |Req-|L'applicazione dovrà essere scritta in Java o Javascript|1|1.0||
+  |Req-|Se java, deve esistere un sito con la descrizione del software|2|1.0||
+  |Req-|Deve essre possibile scaricare il software|1|1.0||
+  |Req-|Se javascript, deve esserci un sito web che ospiti l'applicativo|1|1.0||
   |Req-||1|1.0||
-  |Req-|L'applicazione dovrà avere un'interfaccia grafica|1|1.0||
   |Req-||1|1.0||
-  |Req-||1|1.0||
+  |Req-|L'area di lavoro  deve essere un triangolo|1|1.0||
+  |Req-|L'applicazione dovrà avere un'interfaccia grafica grafica|1|1.0||
+  |Req-|L'interfaccia dovrà avere una schermata di modifica di un segmento del fiocco di neve|1|1.0||
+  |Req-|L'area di lavoro  deve essere un triangolo|1|1.0||
+  |Req-|I punti di taglio sono da inserire con il mouse|1|1.0||
+  |Req-|Deve essere possibile aggiungere punti|1|1.0||
+  |Req-|Deve essere possibile rimuovere punti|2|1.0||
+  |Req-|Deve essere possibile spostare i punti|2|1.0||
+  |Req-|Ci deve essere un pulsante "Reset" per cancellare i punti|1|1.0||
+  |Req-|Ci deve essere un pulsante "Genera" per creare il fiocco di neve|1|1.0||
+  |Req-|L'interfaccia dovrà avere una schermata di salvataggio del fiocco di neve completo|1|1.0||
+  |Req-|Il fiocco di neve deve poter essere salvato|1|1.0||
+  |Req-|Il salvataggio deve essere in formato PNG|1|1.0||
+  |Req-|Il salvataggio deve essere in formato SVG|1|1.0||
+  |Req-|Il salvataggio dovrà avere dimensioni a scelta dell'utente|1|1.0||
+  |Req-|Deve essere possibile salvare i punti di taglio|1|1.0||
+  |Req-|Deve essere possibile caricare i punti di taglio|1|1.0||
+  |Req-|L'interfaccia dovrà avere una transizione animata dalla schermata di modifica a quella di salvataggio|2|1.0||
   |Req-||1|1.0||
   |Req-||1|1.0||
   |Req-||1|1.0||
