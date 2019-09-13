@@ -1,4 +1,4 @@
-# Fiocco-di-neve
+# Fiocco di neve
 ### Progetto individuale SAMT 2019
 
 ## Risultato aspettato
