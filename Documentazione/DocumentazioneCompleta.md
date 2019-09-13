@@ -53,16 +53,20 @@
 
   In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
 
-  -   Allievo/i e docente/i coinvolti nel progetto e rispettivi ruoli,
-
-  -   scuola ,sezione, materia/e,
-
-  -   date di inizio e termine di consegna,
-
-  -   …
+  Allievo: Filippo Zinetti
+  Docenti coinvolti: Luca Muggiasca, Geo Petrini
+  Scuola: SAM Trevano, sezione informatica, modulo 306
+  Periodo: 6.09.2019 - 17.01.2020
+  Tempo di lavoro: 6.09.2019 - 20.12.2019
+  Presentazione: 10.01.2020/17.01.2020
+  Nome progetto: Fiocco di neve
+  Tema: programmazione, applicazione monoutente
 
 ### Abstract
 
+  Il modulo 306 richiede che l'allievo pianifichi e porti a termine un progetto individuale in un arco di tempo definito e con specifiche già definite.
+
+<!--
   E’ una breve e accurata rappresentazione dei contenuti di un documento,
   senza notazioni critiche o valutazioni. Lo scopo di un abstract efficace
   dovrebbe essere quello di far conoscere all’utente il contenuto di base
@@ -87,7 +91,6 @@
       migliore di altri prodotti/soluzioni?
 
   Esempio di abstract:
-
   > *As the size and complexity of today’s most modern computer chips
   > increase, new techniques must be developed to effectively design and
   > create Very Large Scale Integration chips quickly. For this project, a
@@ -99,18 +102,23 @@
   > chips, such as the Pentium 4, can require dozens of engineers and
   > months of time. With the help of this compiler, a single person could
   > design such a large-scale microprocessor in just weeks.*
+  -->
 
 ### Scopo
 
-  Lo scopo del progetto (scopi didattici/scopi operativi). Dovrebbe
-  descrivere il mandato, ma non vanno ricopiate le informazioni del
-  quaderno dei compiti (che va invece allegato).
+  Questo progetto offre una sfida di programmazione usata come pretesto per acquisire esperienza nel portare a termine un piccolo progetto informatico con tutti i componenti che ne aumentano le probabilità di successo, quali documentazioni, diari di lavoro e pianificazioni.
 
 
 ## Analisi
 
 ### Analisi del dominio
 
+  L'applicativo documentato è usato come oggetto di valutazione per un corso.
+  I supervisori definiscono le specifiche e simulano un cliente che si rivolge ad una ditta (l'allievo) per portare a termine un lavoro sviluppando un software.
+  L'applicativo sarà scaricabile localmente dagli utenti e utilizzabile sulla maggior parte dei moderni computer che rispettino delle specifiche.
+  L'utilizzatore potrebbe essere qualsiasi persona interessata alla funzione offerta dal programma; non viene richiesta alcuna conoscenza nè competenza particolare.
+
+<!--
   Questo capitolo dovrebbe descrivere il contesto in cui il prodotto verrà
   utilizzato, da questa analisi dovrebbero scaturire le risposte a quesiti
   quali ad esempio:
@@ -134,6 +142,7 @@
       efficacemente nel dominio?
 
   -   …
+  -->
 
 ### Analisi e specifica dei requisiti
 
@@ -174,44 +183,46 @@
 
 
 
-  |**ID**	|**Nome**			|**Priorità**|**Vers**|**Note**  |
-  |----|------------|--------|----|------|
-  |Req-|L'applicazione dovrà essere scritta in Java o Javascript|1|1.0||
-  |Req-|Se java, deve esistere un sito con la descrizione del software|2|1.0||
-  |Req-|Deve essre possibile scaricare il software|1|1.0||
-  |Req-|Se javascript, deve esserci un sito web che ospiti l'applicativo|1|1.0||
+  |**ID**		|**Nome**			|**Priorità**|**Vers**|**Note**  |
+  |--------|------------|--------|----|------|
+  |Req-1|L'applicazione dovrà essere scritta in Java|1|1.0||
+  |Req-2|Deve esistere un sito con la descrizione del software|2|1.0||
+  |Req-2.1|Il sito dovrà contenere una lista dei requisiti di sistema|2|1.0||
+  |Req-2.2|Il sito dovrà contenere la versione della JRE minima per usare l'applicativo|2|1.0||
+  |Req-2.3|Il sito dovrà contenere una guida all'installazione|2|1.0||
+  |Req-3|Deve essere possibile scaricare il software|1|1.0||
+  |Req-3.1|Dovrà essere disponibile il file .JAR dell'applicazione|1|1.0||
+  |Req-4|L'applicazione dovrà avere un'interfaccia grafica|1|1.0||
+  |Req-4.1|La finestra dovrà avere una dimensione minima di 1024x768px|1|1.0||
+  |Req-5|L'interfaccia dovrà avere una schermata "home", da cui si potrà accedere alle altre|1|1.0||
+  |Req-6|L'interfaccia dovrà avere una schermata di modifica di un segmento del fiocco di neve|1|1.0||
+  |Req-6.1|L'area di lavoro deve essere un triangolo con dimensione pari al 50% della finestra |1|1.0||
+  |Req-6.2|Il triangolo essere sempre centrato|1|1.0||
+  |Req-6.3|Deve essere possibile aggiungere un numero indefinito di punti con un click del tasto sinistro del mouse|1|1.0||
+  |Req-6.4|Deve essere possibile rimuovere punti con un click del tasto destro del mouse|2|1.0||
+  |Req-6.5|Deve essere possibile spostare i punti trascinandoli con il mouse|2|1.0||
+  |Req-6.6|Deve essere possibile creare più serie di punti, quindi avere più poligoni|1|1.0||
+  |Req-6.7|Deve essere presente un anteprima live del risultato, disattivbile tramite pulsante apposito|2|1.0||
+  |Req-6.8|Ci deve essere un pulsante "Reset" per cancellare i punti|1|1.0||
+  |Req-6.9|Ci deve essere un pulsante "Genera" per creare il fiocco di neve|1|1.0||
+  |Req-7|L'interfaccia dovrà avere una schermata con il fiocco di neve completo|1|1.0||
+  |Req-7.1|Il fiocco di neve deve poter essere salvato|1|1.0||
+  |Req-7.2|Il salvataggio sarà effettuato sul computer dell'utente tramite finestra di dialogo nativa del sistema|1|1.0||
+  |Req-7.3|Il salvataggio deve essere in formato PNG, con dimensione quella della finestra al momento del salvataggio, 500x500px o 1000x1000px|1|1.0||
+  |Req-7.4|Il salvataggio deve essere in formato SVG|1|1.0||
+  |Req-7.5|Deve essere possibile salvare i punti di taglio|1|1.0||
+  |Req-7.6|Deve essere possibile caricare i punti di taglio|1|1.0||
+
+<!--
   |Req-||1|1.0||
   |Req-||1|1.0||
-  |Req-|L'area di lavoro  deve essere un triangolo|1|1.0||
-  |Req-|L'applicazione dovrà avere un'interfaccia grafica grafica|1|1.0||
-  |Req-|L'interfaccia dovrà avere una schermata di modifica di un segmento del fiocco di neve|1|1.0||
-  |Req-|L'area di lavoro  deve essere un triangolo|1|1.0||
-  |Req-|I punti di taglio sono da inserire con il mouse|1|1.0||
-  |Req-|Deve essere possibile aggiungere punti|1|1.0||
-  |Req-|Deve essere possibile rimuovere punti|2|1.0||
-  |Req-|Deve essere possibile spostare i punti|2|1.0||
-  |Req-|Ci deve essere un pulsante "Reset" per cancellare i punti|1|1.0||
-  |Req-|Ci deve essere un pulsante "Genera" per creare il fiocco di neve|1|1.0||
-  |Req-|L'interfaccia dovrà avere una schermata di salvataggio del fiocco di neve completo|1|1.0||
-  |Req-|Il fiocco di neve deve poter essere salvato|1|1.0||
-  |Req-|Il salvataggio deve essere in formato PNG|1|1.0||
-  |Req-|Il salvataggio deve essere in formato SVG|1|1.0||
-  |Req-|Il salvataggio dovrà avere dimensioni a scelta dell'utente|1|1.0||
-  |Req-|Deve essere possibile salvare i punti di taglio|1|1.0||
-  |Req-|Deve essere possibile caricare i punti di taglio|1|1.0||
-  |Req-|L'interfaccia dovrà avere una transizione animata dalla schermata di modifica a quella di salvataggio|2|1.0||
   |Req-||1|1.0||
   |Req-||1|1.0||
-  |Req-||1|1.0||
-  |Req-||1|1.0||
-  |Req-||1|1.0||
-  |Req-||1|1.0||
-  |Req-||1|1.0||
+-->
 
 
 
-
-
+<!--
 **Spiegazione elementi tabella dei requisiti:**
 
 **ID**: identificativo univoco del requisito
@@ -234,7 +245,7 @@ vecchie dovranno essere inserite nei diari.
 requisiti.
 
 **Sotto requisiti**: elementi che compongono il requisito.
-
+-->
 
 ### Use case
 
@@ -243,6 +254,7 @@ funzionalità del prodotto.
 
 ### Pianificazione
 
+<!--
 Prima di stabilire una pianificazione bisogna avere almeno una vaga idea
 del modello di sviluppo che si intende adottare. In questa sezione
 bisognerà inserire il modello concettuale di sviluppo che si seguirà
@@ -255,6 +267,7 @@ Gantt.
 
 Se si usano altri metodi di pianificazione (es scrum), dovranno apparire
 in questo capitolo.
+-->
 
 ### Analisi dei mezzi
 
