@@ -10,8 +10,8 @@ L'applicazione sarà sviluppata in Java. Un sito web sarà anche realizzato a sc
 ## Informazioni sul Progetto
 Il progetto è stato commissionato a scopo di valutazione scolastica. La durata dello sviluppo è di quattro mesi: da settembre a dicembre 2019.
 
-[## Documentazione](Documentazione/DocumentazioneCompleta.md)
-[## Pianificazione](Documentazione/ProgettoFioccoDiNeve.mpp)
+## [Documentazione](Documentazione/DocumentazioneCompleta.md)
+## [Pianificazione](Documentazione/ProgettoFioccoDiNeve.mpp)
 
 ## Diari
 - [Lezione 1, 6.9.2019](Diari/FILZIN_FioccoDiNeve_2019-09-06.md)
