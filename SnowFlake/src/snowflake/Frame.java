@@ -11,4 +11,5 @@ package snowflake;
  */
 public class Frame {
     
+    
 }
