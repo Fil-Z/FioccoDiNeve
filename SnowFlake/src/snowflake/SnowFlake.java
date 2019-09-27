@@ -8,25 +8,17 @@ package snowflake;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
-import java.awt.Polygon;
-import java.awt.Shape;
+import java.awt.Graphics2d;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Area;
+import java.awt.event.MouseMotionListener
 import java.awt.geom.Line2D;
 import java.awt.geom.PathIterator;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JFrame;
 import javax.swing.JPanel;
-import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
+import static javax.swing;
 
 /**
  *
@@ -39,7 +31,6 @@ public class SnowFlake extends JPanel implements MouseListener, MouseMotionListe
     private Polygon triangle = new Polygon();
     private List<Polygon> ts = new ArrayList<>();
     private Random rand;
-    private int pSize = 6;
     private boolean removeLast = false;
     
     
@@ -90,8 +81,6 @@ public class SnowFlake extends JPanel implements MouseListener, MouseMotionListe
     
     public Color getRandomColor() {
         float r = rand.nextFloat();
-        float v = rand.nextFloat();
-        float b = rand.nextFloat();
         return new Color(r, v, b);
     }
     
@@ -132,39 +121,14 @@ public class SnowFlake extends JPanel implements MouseListener, MouseMotionListe
         for (Point p : pts) {
             poly.addPoint(p.x, p.y);
         }
-        Area tArea = new Area(triangle);
-        tArea.subtract((new Area(poly)));
-        AffineTransform at = new AffineTransform();
-        PathIterator pi = tArea.getPathIterator(at);
-        double[] fa = new double[6];
-        Polygon p = new Polygon();
-        //p.addPoint();
-        while (!pi.isDone()) {
-            int type = pi.currentSegment(fa);
-            if (type == 1 || type == 0) {
-                p.addPoint((int)fa[0], (int)fa[1]);
-            } else if (type == 4) {
-                ts.add(p);
-                p = new Polygon();
-            }
-            pi.next();
-        }
         removeLast = true;
         repaint();
         System.out.println(getSVG());
     }
     
     public String getSVG() {
-        String svg = "\n\n<svg height=\""+this.getWidth()+"\" width=\""+this.getHeight()+"\">";
-        for (Polygon poly : ts) {
-            svg += "<polygon points=\"";
-            for (int i = 0; i < poly.npoints; i++) {
-                svg += poly.xpoints[i] + "," + poly.ypoints[i] + " ";
-            }
-            svg += "\" style=\"fill:lime;stroke:purple;stroke-width:1\" />";
-        }
-        svg += "</svg>";
-        return svg;
+        String fz;
+        return fz;
     }
     
     public void wait(int millis) {
