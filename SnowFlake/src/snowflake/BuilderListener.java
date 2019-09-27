@@ -5,23 +5,13 @@
  */
 package snowflake;
 
-import java.awt.Graphics;
-import snowflake.states.State;
+import java.awt.Polygon;
+import java.util.List;
 
 /**
  *
  * @author Filippo
  */
-public class BuilderState extends State {
-    
-    public BuilderState() {
-        super();
-        
-    }
-
-    @Override
-    public void render(Graphics g) {
-        
-    }
-    
+interface BuilderListener {
+    public void builderStateChanged(List<Polygon> ps, double bX, double bY);
 }
