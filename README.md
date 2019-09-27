@@ -15,4 +15,6 @@ Il progetto è stato commissionato a scopo di valutazione scolastica. La durata 
 
 ## Diari
 - [Lezione 1, 6.9.2019](Diari/FILZIN_FioccoDiNeve_2019-09-06.md)
-- [Lezione 2, 6.9.2019](Diari/FILZIN_FioccoDiNeve_2019-09-13.md)
+- [Lezione 2, 13.9.2019](Diari/FILZIN_FioccoDiNeve_2019-09-13.md)
+- [Lezione 3, 20.9.2019](Diari/FILZIN_FioccoDiNeve_2019-09-20.md)
+- [Lezione 4, 27.9.2019](Diari/FILZIN_FioccoDiNeve_2019-09-27.md)
